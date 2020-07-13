@@ -2,6 +2,7 @@ module.exports = {
   /*
   ** Headers of the page
   */
+
   head: {
     title: 'vue-chat',
     meta: [
@@ -40,6 +41,7 @@ module.exports = {
   },
   modules: [
     'bootstrap-vue/nuxt',
+    '@nuxtjs/axios',
     ['cookie-universal-nuxt', { alias: 'cookies' }]
   ],
   router: {
@@ -47,5 +49,4 @@ module.exports = {
     middleware: ['auth']
   }
 
-}
-
+};

@@ -59,9 +59,9 @@
     methods: {
       async onSubmit() {
         try {
-
+          const url = window.location.host;
           const {name, email} = this.form;
-          const user = await axios.get('http://localhost:3000/users');
+          const user = await axios.get(`http://${url.replace('8000', '3000')}/users`);
 
           const isExist = user.data.find(item => {
             if (item.name === name || item.email === email) {
@@ -71,7 +71,7 @@
 
           if (isExist) return false;
 
-          const response = await axios.post('http://localhost:3000/users', {
+          const response = await axios.post(`http://${url.replace('8000', '3000')}/users`, {
             id: uuid(),
             name,
             email,

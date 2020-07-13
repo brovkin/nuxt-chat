@@ -58,16 +58,17 @@
     methods: {
       async onSubmit() {
         if (this.mainInput) {
-          const response = await axios.post('http://localhost:3000/messages', {
+          const url = window.location.host;
+          const response = await axios.post(`http://${url.replace('8000', '3000')}/messages`, {
             id: uuid(),
             message: this.mainInput,
             user: this.currentUser,
             time: this.time,
           });
 
-          const user = await axios.get('http://localhost:3000/users/' + this.currentUser.id);
+          const user = await axios.get(`http://${url.replace('8000', '3000')}/users/` + this.currentUser.id);
 
-          await axios.patch('http://localhost:3000/users/' + this.currentUser.id, {
+          await axios.patch(`http://${url.replace('8000', '3000')}/users/` + this.currentUser.id, {
             countMessages: user.data.countMessages + 1
           })
 

@@ -5,7 +5,6 @@
       <hr class="my-4">
       <b-button v-if="isAuth" to="/chat">Go to chat</b-button>
       <b-button v-else to="/register">Go to register</b-button>
-
       <template v-if="isAuth">
         <h3>Our users:</h3>
         <Users/>
@@ -16,6 +15,7 @@
 
 <script>
 import Users from "../components/Users";
+import axios from 'axios';
 import { mapState } from 'vuex';
 export default {
   layout: 'main',

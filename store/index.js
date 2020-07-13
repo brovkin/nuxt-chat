@@ -27,11 +27,13 @@ const store = () => new Vuex.Store({
   },
   actions: {
     async getMessages({commit}) {
-      const response = await axios.get('http://localhost:3000/messages');
+      const url = window.location.host;
+      const response = await axios.get(`http://${url.replace('8000', '3000')}/messages`);
       commit('getMessages', response.data);
     },
     async getUsers({commit}) {
-      const response = await axios.get('http://localhost:3000/users');
+      const url = window.location.host;
+      const response = await axios.get(`http://${url.replace('8000', '3000')}/users`);
       commit('getUsers', response.data);
     }
   },

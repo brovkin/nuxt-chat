@@ -59,7 +59,8 @@
       async onSubmit() {
         try {
           const {name, email} = this.form;
-          const user = await axios.get('http://localhost:3000/users');
+          const url = window.location.host;
+          const user = await axios.get(`http://${url.replace('8000', '3000')}/users`);
 
           const existUser = user.data.find(item => {
             if (item.name === name && item.email === email) {

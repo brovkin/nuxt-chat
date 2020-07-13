@@ -19,6 +19,9 @@
       ...mapState({
         users: state => state.users
       })
+    },
+    mounted() {
+      this.$store.dispatch('getUsers');
     }
   }
 </script>

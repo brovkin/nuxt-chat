@@ -16,7 +16,7 @@
 
 `npm run dev`
 
-### Запуск в gitpod.id
+### Запуск в gitpod.io
 
 Документация: https://www.gitpod.io/docs/getting-started/
 
