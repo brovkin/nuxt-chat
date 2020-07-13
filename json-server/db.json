@@ -1,0 +1,57 @@
+{
+  "users": [
+    {
+      "id": "f7bea27a-d88b-4445-a5c5-70740aa35fb4",
+      "name": "brovkin",
+      "email": "brovkin.on@gmail.com",
+      "countMessages": 0
+    },
+    {
+      "id": "5ca7ce94-98cb-4203-8336-5ce07dbe057b",
+      "name": "brovkin-dev",
+      "email": "brovkin@gmail.com",
+      "countMessages": 0
+    },
+    {
+      "id": "28980eb0-73fd-4492-8f58-aabc622d5032",
+      "name": "newUser",
+      "email": "bro@mail.ru",
+      "countMessages": 4
+    }
+  ],
+  "messages": [
+    {
+      "id": "769436fc-a3ad-4ef8-93fe-047644368944",
+      "message": "sdfsd",
+      "user": {
+        "id": "28980eb0-73fd-4492-8f58-aabc622d5032",
+        "name": "newUser",
+        "email": "bro@mail.ru",
+        "countMessages": 0
+      },
+      "time": "11:11:34"
+    },
+    {
+      "id": "c5370ec0-370b-45af-b581-9faf1cb0a396",
+      "message": "Hey",
+      "user": {
+        "id": "28980eb0-73fd-4492-8f58-aabc622d5032",
+        "name": "newUser",
+        "email": "bro@mail.ru",
+        "countMessages": 0
+      },
+      "time": "11:11:34"
+    },
+    {
+      "id": "c7f60964-0469-44db-83bb-230f139f9436",
+      "message": "What",
+      "user": {
+        "id": "28980eb0-73fd-4492-8f58-aabc622d5032",
+        "name": "newUser",
+        "email": "bro@mail.ru",
+        "countMessages": 0
+      },
+      "time": "11:11:34"
+    }
+  ]
+}
