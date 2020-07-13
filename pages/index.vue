@@ -26,6 +26,6 @@ export default {
     ...mapState({
       isAuth: state => state.isAuth
     })
-  },
+  }
 }
 </script>

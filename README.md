@@ -16,8 +16,13 @@
 
 `npm run dev`
 
-## Приложение
-[Nuxt-Chat :speech_balloon:](http://react-table.brozabro.ru/) 
+### Запуск в gitpod.id
+
+Документация: https://www.gitpod.io/docs/getting-started/
+
+`https://gitpod.io/#https://github.com/brovkin/nuxt-chat`
+
+[Launch in gitpod](https://gitpod.io/#https://github.com/brovkin/nuxt-chat) 
 
 ## Контакты 🦜
 
